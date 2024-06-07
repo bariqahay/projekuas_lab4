@@ -25,10 +25,13 @@ class RentalPS {
 private:
     vector<Pelanggan> daftarPelanggan;
     vector<KonsolPS> daftarKonsol;
-    
+    void muatDatabase();
+    void simpanDatabase();
+
 public:
     RentalPS();
     void tambahPelanggan(int id, string nama, string alamat);
+    void hapusPelanggan(int id);
     void tambahKonsol(int id, string nama, bool tersedia);
     void tampilkanPelanggan();
     void tampilkanKonsol();
